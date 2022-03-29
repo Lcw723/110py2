@@ -1,0 +1,33 @@
+blood=[]
+blood.append(['O','O','O'])
+blood.append(['O','A','A'])
+blood.append(['O','A','O'])
+blood.append(['O','B','B'])
+blood.append(['O','B','O'])
+blood.append(['O','AB','A'])
+blood.append(['O','AB','B'])
+blood.append(['A','A','A'])
+blood.append(['A','A','O'])
+blood.append(['A','B','A'])
+blood.append(['A','B','B'])
+blood.append(['A','B','O'])
+blood.append(['A','B','AB'])
+blood.append(['A','AB','A'])
+blood.append(['A','AB','B'])
+blood.append(['A','AB','AB'])
+blood.append(['B','B','B'])
+blood.append(['B','B','O'])
+blood.append(['B','AB','A'])
+blood.append(['B','AB','B'])
+blood.append(['B','AB','AB'])
+blood.append(['AB','AB','A'])
+blood.append(['AB','AB','B'])
+blood.append(['AB','AB','AB'])
+
+a=int(input("測試的資料量:"))
+for i in range(a):
+    fblood=input("依序輸入父、母、子女的血型:").split(" ")
+    if fblood in blood:
+        print("YES")
+    else:
+        print("IMPOSSIBLE")
